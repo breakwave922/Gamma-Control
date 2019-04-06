@@ -12,7 +12,7 @@ from scipy import signal
 import pdb
 from utils import series_to_supervised, fit_lstm, forecast_lstm, make_forecasts
 
-np.random.seed(1234)
+np.random.seed(12345)
 
 def butter_bandpass(lowcut, highcut, fs, order=2):
 	nyq = 0.5 * fs
